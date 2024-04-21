@@ -45,7 +45,7 @@ python main.py train
 
 ## Results
 AudioSet: 
-|     | tiny | small | base |
+|     | RWKV tiny | RWKV small | RWKV base |
 |-----|------|-------|------|
 | mAP | 40.1  |      |      |
 |      |       |      |      |
