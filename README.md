@@ -1,4 +1,7 @@
 # AudioRKWV: Pretrained Audio RWKV for Audio Pattern Recognition
+## Introduction
+
+The Code Repository for  "AudioRKWV: Pretrained Audio RWKV for Audio Pattern Recognition"
 
 ## Environments
 The codebase is developed with pytorch == 1.8.1, torch-lightning == 1.5.9
@@ -6,6 +9,9 @@ Install requirements as follows:
 ```
 pip install -r requirements.txt
 ```
+
+
+
 
 ## Training 
 First config the model parameters in config.py
