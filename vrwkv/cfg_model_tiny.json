@@ -1,0 +1,40 @@
+{
+  "type": "ImageClassifier",
+  "backbone": {
+    "type": "VRWKV6",
+    "img_size": 224,
+    "patch_size": 16,
+    "embed_dims": 192,
+    "num_heads": 3
+  },
+  "neck": {
+    "type": "GlobalAveragePooling"
+  },
+  "head": {
+    "type": "LinearClsHead",
+    "num_classes": 527,
+    "in_channels": 192,
+    "init_cfg": null,
+    "loss": {
+      "type": "LabelSmoothLoss",
+      "label_smooth_val": 0.1,
+      "mode": "original"
+    },
+    "cal_acc": false
+  },
+  "init_cfg": [
+    {
+      "type": "TruncNormal",
+      "layer": "Linear",
+      "std": 0.02,
+      "bias": 0.0
+    },
+    {
+      "type": "Constant",
+      "layer": "LayerNorm",
+      "val": 1.0,
+      "bias": 0.0
+    }
+  ],
+  "train_cfg": {}
+}
