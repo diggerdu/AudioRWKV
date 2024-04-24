@@ -1,4 +1,4 @@
-# AudioRKWV: Pretrained Audio RWKV for Audio Pattern Recognition
+# AudioRWKV: Pretrained Audio RWKV for Audio Pattern Recognition
 ## Introduction
 
 The Code Repository for  "AudioRKWV: Pretrained Audio RWKV for Audio Pattern Recognition"
